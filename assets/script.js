@@ -21,6 +21,13 @@ function generatePassword() {
     var passwordChars = ("");
 
     var passwordLength = window.prompt("How many characters would you like your password to be (8 to 128)");
+    if (isNaN(passwordLength)) {
+        window.alert("ERROR-002: Invalid input. Please input a number between 8 and 128")
+        return;
+    } else if (passwordLength < 8 || passwordLength > 128) {
+        window.alert("ERROR-003: Invalid input. Please input a number between 8 and 128")
+        return;
+    };
     
     var lowercase = window.confirm("Would you like to use lowercase letters?")
     if (lowercase) {
@@ -42,10 +49,15 @@ function generatePassword() {
         passwordChars += specialChars
     };
 
+    if (!lowercase && !uppercase && !numbers && !specials) {
+        window.alert("ERROR-001: You must choose at least 1 set of characters!")
+        return;
+    };
+
     var passwordGen = ("");
     for (i = 0; i < passwordLength; i++) {
         passwordGen += passwordChars[Math.floor(Math.random() * passwordChars.length)]
-    }
+    };
     return passwordGen;
 }
 
