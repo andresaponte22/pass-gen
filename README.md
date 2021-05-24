@@ -12,5 +12,6 @@ Criteria includes password length, and whether or not to include lowercase, uppe
                         Known errors
 When given an error, user sees "undefined" in the text box where the password shows up.
 
-                        Website screenshot
+                        Website
+[Deployed website](https://andresaponte22.github.io/pass-gen/)
 ![screenshot](https://imgur.com/a7Vxmw8)
