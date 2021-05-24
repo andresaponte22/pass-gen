@@ -14,4 +14,4 @@ When given an error, user sees "undefined" in the text box where the password sh
 
                         Website
 [Deployed website](https://andresaponte22.github.io/pass-gen/)
-![screenshot](https://imgur.com/a7Vxmw8)
+![screenshot](https://i.imgur.com/a7Vxmw8.png)
